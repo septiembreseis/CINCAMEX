@@ -1,0 +1,285 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+*:focus,
+*:before:focus,
+*:after:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #FCCB60;
+}
+
+form {
+  padding: 10px;
+}
+.cb-input {
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 20px 0;
+}
+.cb-input label {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  font-size: 1em;
+  padding-left: 3px;
+}
+.cb-input input,
+.cb-input select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  background-color: #7B536B;
+  border-radius: none;
+  font-size: 1em;
+}
+.cb-input input:nth-last-child(2),
+.cb-input select:nth-last-child(2) {
+  border-right: 3px solid #e1e1e1;
+}
+.cb-input input[type="file"],
+.cb-input select[type="file"] {
+  position: fixed;
+  top: -1000px;
+}
+.cb-input input[type="checkbox"],
+.cb-input select[type="checkbox"] {
+  position: fixed;
+  top: -1000px;
+}
+.cb-input input[type="checkbox"] + label,
+.cb-input select[type="checkbox"] + label {
+  height: 44px;
+  width: 44px;
+  border: 3px solid #e1e1e1;
+  background-color: #FAFAFA;
+  font-size: 24px;
+}
+.cb-input input[type="checkbox"] + label + label,
+.cb-input select[type="checkbox"] + label + label {
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.cb-input input[type="checkbox"] + label i,
+.cb-input select[type="checkbox"] + label i {
+  display: none;
+}
+.cb-input input[type="checkbox"]:focus + label,
+.cb-input select[type="checkbox"]:focus + label {
+  outline: none;
+/*  box-shadow: 0 0 2px 2px #c7c7c7;*/
+  z-index: 2;
+}
+.cb-input input[type="checkbox"]:checked + label i,
+.cb-input select[type="checkbox"]:checked + label i {
+  display: inline;
+}
+.cb-input input ~ label,
+.cb-input select ~ label {
+  -webkit-box-flex: 0;
+/*
+  -webkit-flex: 0 0 44px;
+      -ms-flex: 0 0 44px;
+          flex: 0 0 44px;
+*/
+  display: -webkit-box;
+  display: -webkit-inline-block;
+  display: -ms-flexbox;
+  display: inline-block;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  font-size: 14px;
+  color: #FFBD18;
+}
+.cb-input input ~ label:hover,
+.cb-input select ~ label:hover {
+/*
+  border: 1px solid #FCCB60;
+  background-color: #FCCB60;
+*/
+}
+.cb-input input:focus:hover + ul,
+.cb-input select:focus:hover + ul,
+.cb-input input:focus ~ div.tooltip,
+.cb-input select:focus ~ div.tooltip {
+  display: block;
+}
+.cb-input button {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 44px;
+      -ms-flex: 0 0 44px;
+          flex: 0 0 44px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  font-size: 16px;
+/*
+  border: 3px solid #FCCB60;
+  background-color: #FCCB60;
+*/
+  cursor: pointer;
+}
+.cb-input button:hover {
+/*
+  border: 1px solid #FCCB60;
+  background-color: #FCCB60;
+*/
+}
+.cb-input ul {
+  display: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  left: 0;
+  right: 0;
+  top: calc(100%);
+  border: 1px solid #999;
+  background-color: #fff;
+  z-index: 10;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+.cb-input ul:hover {
+  display: block;
+}
+.cb-input li {
+  padding: 5px;
+}
+.cb-input li:hover {
+  background-color: #e1e1e1;
+  cursor: pointer;
+}
+.cb-input .tooltip {
+  display: none;
+  position: absolute;
+  right: -275px;
+  width: 250px;
+  padding: 13px;
+  background-color: #fff;
+  -webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+}
+.cb-input .tooltip:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -15px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid #fff;
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #ffffff;
+    padding-left: 7px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+/*    font-size: 1.2em;*/
+    opacity: 1;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ffffff;
+    padding-left: 7px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+/*    font-size: 1.2em;*/
+    opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ffffff;
+    padding-left: 7px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+/*    font-size: 1.2em;*/
+    opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #ffffff;
+    padding-left: 7px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+/*    font-size: 1.2em;*/
+    opacity: 1;
+}
+
+
+input{
+    transition: all 0.2s linear;
+    color: #ffffff;
+}
+
+textarea{
+    transition: all 0.2s linear;
+}
+
+
+input:focus { 
+    outline: none !important;
+    border-bottom: 2px solid #ffffff;
+}
+
+textarea:focus {
+    outline: none !important;
+    border-bottom: 2px solid #ffffff;
+}
+
+#message-input {
+    padding-bottom: 75px;
+
+
+@media (max-width: 480px) {
+  .cb-input {
+    width: 100%;
+  }
+  .cb-input ul {
+    display: none !important;
+  }
+  .tooltip {
+    display: none;
+  }
+}

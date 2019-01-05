@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52 (66869) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 23.99985 0 23.99985 23.99985 0 23.99985"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-1077.000000, -3623.000000)">
+            <g id="Footer" transform="translate(0.000000, 3541.000000)">
+                <g id="Group-3" transform="translate(1077.000000, 82.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M14.57085,12.00435 L12.88935,12.00435 L12.88935,17.99985 L10.39785,17.99985 L10.39785,12.00435 L9.2121,12.00435 L9.2121,9.88635 L10.39785,9.88635 L10.39785,8.51535 C10.39785,7.5351 10.8636,5.99985 12.91185,5.99985 L14.7576,6.00735 L14.7576,8.06385 L13.4181,8.06385 C13.19985,8.06385 12.88935,8.1741 12.88935,8.64135 L12.88935,9.88635 L14.7891,9.88635 L14.57085,12.00435 Z M-0.00015,23.99985 L23.99985,23.99985 L23.99985,-0.00015 L-0.00015,-0.00015 L-0.00015,23.99985 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
